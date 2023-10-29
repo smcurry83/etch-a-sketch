@@ -22,6 +22,8 @@
             <button onclick="resetBoard()">Reset</button>
           </div>
           <div>
+<!-- remove input field and button -->
+<!--
             <input
               type="text" 
               placeholder="Size of board" 
@@ -29,6 +31,16 @@
               onchange="changeSize(this.value)"
             />
             <button>Set Size</button>
+-->
+            <button id="set-size-button">Set Size</button>
+          </div>
+          <div class="popup" id="popup">
+            <input
+              type="number"
+              id="popup-input"
+              placeholder="Enter size (2-100)"
+            />
+            <button id="popup-verify-button">Enter</button>
           </div>
           <div class="error">
             Input must be between 2 and 100

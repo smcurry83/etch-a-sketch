@@ -103,3 +103,29 @@ input {
   display: flex;
 }
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #333;
+  display: none;
+  z-index: 999;
+}
+
+.popup input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+

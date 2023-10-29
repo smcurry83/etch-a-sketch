@@ -20,6 +20,7 @@ function populateBoard(size) {
 
 populateBoard(16);
 
+/*
 function changeSize(input) {
   if(input >= 2 && input <= 100) {
     document.querySelector(".error").style.display = "none";
@@ -28,6 +29,23 @@ function changeSize(input) {
     document.querySelector(".error").style.display = "flex";
   } 
 }
+*/
+
+document.getElementById('set-size-button').addEventListener('click', () => {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'block';
+
+  document.getElementById('popup-verify-button').addEventListener('click', () => {
+    const newSize = parseInt(document.getElementById('popup-input').value, 10);
+    if (newSize >= 2 && newSize <= 100) {
+      document.querySelector('.error').style.display = 'none';
+      populateBoard(newSize);
+      popup.style.display = 'none';
+    } else {
+      document.querySelector('.error').style.display = 'flex';
+    }
+  });
+});
 
 function colorSquare() {
   if(click) {
