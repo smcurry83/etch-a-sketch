@@ -11,6 +11,7 @@
   width: 500px;
   height: 500px;
   display: grid;
+  border: solid 1px black;
 }
 
 .board:hover {
@@ -27,6 +28,10 @@
   height: 60vw;
   max-width: 600px;
   max-height: 600px;
+}
+
+.board>div {
+  border: solid 0.1px lightgray;
 }
 
 .title {
@@ -91,10 +96,6 @@ button:hover {
   color: white;
 }
 
-input {
-  width: 50px;
-}
-
 .mode {
   margin-bottom: 5px;
 }
@@ -111,6 +112,7 @@ input {
   background: white;
   padding: 20px;
   border: 2px solid #333;
+  border-radius: 2%;
   display: none;
   z-index: 999;
 }

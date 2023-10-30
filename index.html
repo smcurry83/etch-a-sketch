@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Etch-A-Sketch</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./reset.css">
@@ -11,7 +11,6 @@
     <body>
       <div class="flex-container">
         <div class="title"><h1>Etch-A-Sketch</h1></div>
-        <div class="mode">Mode: Coloring</div>
         <div class="content">
           <div class="board"></div>
           <div class="buttons">
@@ -22,16 +21,6 @@
             <button onclick="resetBoard()">Reset</button>
           </div>
           <div>
-<!-- remove input field and button -->
-<!--
-            <input
-              type="text" 
-              placeholder="Size of board" 
-              value="16"
-              onchange="changeSize(this.value)"
-            />
-            <button>Set Size</button>
--->
             <button id="set-size-button">Set Size</button>
           </div>
           <div class="popup" id="popup">
@@ -41,9 +30,9 @@
               placeholder="Enter size (2-100)"
             />
             <button id="popup-verify-button">Enter</button>
-          </div>
-          <div class="error">
-            Input must be between 2 and 100
+            <div class="error">
+              Input must be between 2 and 100
+            </div>
           </div>
         </div>  
       </div>
